@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.itamargame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ItamarGame">
+        <activity
+            android:name=".Level_nineteen"
+            android:exported="false" />
+        <activity
+            android:name=".Level_eighteen"
+            android:exported="false" />
+        <activity
+            android:name=".Level_seventeen"
+            android:exported="false" />
+        <activity
+            android:name=".Level_sixteen"
+            android:exported="false" />
+        <activity
+            android:name=".Level_fifteen"
+            android:exported="false" />
+        <activity
+            android:name=".Level_fourteen"
+            android:exported="false" />
+        <activity
+            android:name=".Level_thirteen"
+            android:exported="false" />
+        <activity
+            android:name=".Level_twelve"
+            android:exported="false" />
+        <activity
+            android:name=".level_eleven"
+            android:exported="false" />
+        <activity
+            android:name=".Level_ten"
+            android:exported="false" />
+        <activity
+            android:name=".Menu_one"
+            android:exported="false" />
+        <activity
+            android:name=".Level_nine"
+            android:exported="false" />
+        <activity
+            android:name=".Level_eight"
+            android:exported="false" />
+        <activity
+            android:name=".Level_seven"
+            android:exported="false" />
+        <activity
+            android:name=".Level_six"
+            android:exported="false" />
+        <activity
+            android:name=".Level_five"
+            android:exported="false" />
+        <activity
+            android:name=".Level_four"
+            android:exported="false" />
+        <activity
+            android:name=".Level_three"
+            android:exported="false" />
+        <activity
+            android:name=".Level_two"
+            android:exported="false" />
+        <activity
+            android:name=".Level_one"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
