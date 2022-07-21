@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lvlfour"
+    tools:context=".Settings"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:gravity="center"
+            android:text="כן כן יש אפילו הגדרות"
+            android:textColor="#2196F3"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_speaker"
+            android:layout_width="26dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/speaker" />
+
+        <com.google.android.material.slider.Slider
+
+            android:id="@+id/sound_slider"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:value="20.0"
+            android:valueFrom="0.0"
+
+            android:valueTo="100.0"
+            app:haloRadius="28dp"
+            app:tickColorActive="@color/purple_500" />
+    </LinearLayout>
+
+
+</LinearLayout>

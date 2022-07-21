@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ItamarGame">
         <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
             android:name=".Level_nineteen"
             android:exported="false" />
         <activity

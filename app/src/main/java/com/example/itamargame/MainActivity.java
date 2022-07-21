@@ -12,7 +12,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn_start, btn_htp, btn_menu;
+    Button btn_start, btn_htp, btn_menu, btn_settings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +22,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_start = findViewById(R.id.btn_start);
         btn_htp = findViewById(R.id.btn_how_to_play);
         btn_menu = findViewById(R.id.btn_menu);
+        btn_settings = findViewById(R.id.btn_settings);
         btn_start.setOnClickListener(this);
         btn_htp.setOnClickListener(this);
         btn_menu.setOnClickListener(this);
+        btn_settings.setOnClickListener(this);
 
         SoundPlayer(this);
         CommonMethod.player.start();
@@ -49,6 +51,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent menu = new Intent(MainActivity.this, Menu_one.class);
             startActivity(menu);
         }
+        else if(v.getId() == R.id.btn_settings)
+        {
+            Intent settings = new Intent(MainActivity.this, Settings.class);
+            startActivity(settings);
+        }
+
 
     }
 }
