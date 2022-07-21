@@ -28,22 +28,25 @@ public class Settings extends AppCompatActivity implements Slider.OnSliderTouchL
 
     @Override
     public void onStartTrackingTouch(@NonNull Slider slider) {
-
     }
 
     @Override
     public void onStopTrackingTouch(@NonNull Slider slider) {
-
-
-        if(slider.getValue() == 0)
-        {
-            iv_speaker.setImageResource(R.drawable.mute);
-        }
 
     }
 
     @Override
     public void onValueChange(@NonNull Slider slider, float value, boolean fromUser) {
         CommonMethod.player.setVolume((int) slider.getValue(),(int) slider.getValue());
+
+        if(slider.getValue() == 0)
+        {
+            iv_speaker.setImageResource(R.drawable.mute);
+        }
+        else if(slider.getValue() != 0)
+        {
+            iv_speaker.setImageResource(R.drawable.speaker);
+        }
+
     }
 }
