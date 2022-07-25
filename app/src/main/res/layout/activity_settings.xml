@@ -32,7 +32,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="341dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -54,6 +54,29 @@
             android:valueTo="100.0"
             app:haloRadius="28dp"
             app:tickColorActive="@color/purple_500" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_home"
+
+            android:layout_width="270dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="טוב סיימתי"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
     </LinearLayout>
 
 
